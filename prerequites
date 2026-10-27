@@ -1,0 +1,32 @@
+Jenkins EC2
+│
+├── Git
+│     └── Pull source code from GitHub
+│
+├── Maven
+│     └── Build Spring Boot JAR
+│
+├── Docker
+│     └── Build Docker Image
+│
+├── AWS CLI
+│     └── Authenticate to AWS and ECR
+│
+├── kubectl
+│     └── Interact with EKS cluster
+│
+├── Helm
+│     └── Deploy Helm charts
+│
+├── kubeconfig (~/.kube/config)
+│     └── Contains EKS cluster connection details
+          Kubernetes API server endpoint
+          cluster CA certificate used to verify the server identity
+│
+└── IAM Role (attached to jenkins server)
+      └── Permissions for ECR and EKS access
+
+on jenkins ui need to install
+docker plugin 
+kubernetes
+git
